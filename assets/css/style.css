@@ -1,0 +1,118 @@
+/* Paleta de Cores Extraída da Logo O'Reillys */
+:root {
+    --navy-dark: #030811;      /* Fundo do rodapé e navbar */
+    --navy: #061021;           /* Cor de fundo principal da logo */
+    --navy-light: #0d1e38;     /* Fundo secundário para contraste */
+    --gold: #D4AF37;           /* Dourado rico dos ícones */
+    --gold-hover: #b8962c;     /* Dourado mais escuro */
+    --cream: #F3EFE6;          /* Cor das letras */
+    --cream-muted: #c0bba9;    /* Cor para parágrafos */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--navy);
+}
+
+/* Utilitários de Cor */
+.bg-navy { background-color: var(--navy) !important; }
+.bg-navy-dark { background-color: var(--navy-dark) !important; }
+.bg-navy-light { background-color: var(--navy-light) !important; }
+.text-gold { color: var(--gold) !important; }
+.text-cream { color: var(--cream) !important; }
+.text-cream-muted { color: var(--cream-muted) !important; }
+.border-gold { border-color: var(--gold) !important; }
+
+/* Borda sutil para imagens */
+.border-gold-subtle {
+    border: 1px solid rgba(212, 175, 55, 0.4) !important;
+}
+
+/* Imagens Customizadas */
+.logo-navbar {
+    height: 80px; /* Ajuste conforme necessário */
+    width: auto;
+}
+
+.logo-footer {
+    height: 80px; /* Ajuste conforme necessário, maior que o navbar */
+    width: auto;
+}
+
+/* Navbar */
+.navbar {
+    padding: 1rem 0;
+    background-color: rgba(3, 8, 17, 0.95) !important;
+    backdrop-filter: blur(10px);
+}
+.navbar-nav .nav-link {
+    color: var(--cream-muted) !important;
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
+    margin-left: 1.5rem;
+    transition: 0.3s;
+}
+.navbar-nav .nav-link:hover {
+    color: var(--gold) !important;
+}
+
+/* Hero Section (com Banner Texturizado) */
+.hero-section {
+    min-height: 100vh;
+    padding-top: 80px;
+    /* Alterado de 0.92/0.95 para 0.65/0.80 */
+    background: linear-gradient(rgba(6, 16, 33, 0.65), rgba(6, 16, 33, 0.80)), url('../../assets/img/banner.png') center/cover;
+}
+/* Botões Customizados */
+.btn-gold {
+    background-color: var(--gold);
+    color: var(--navy-dark);
+    border: 2px solid var(--gold);
+    transition: all 0.3s ease;
+}
+.btn-gold:hover {
+    background-color: var(--gold-hover);
+    border-color: var(--gold-hover);
+    color: var(--navy-dark);
+}
+
+.btn-outline-gold {
+    color: var(--gold);
+    border: 2px solid var(--gold);
+    background: transparent;
+    transition: all 0.3s ease;
+}
+.btn-outline-gold:hover {
+    background-color: var(--gold);
+    color: var(--navy-dark);
+}
+
+.hover-gold:hover {
+    color: var(--gold) !important;
+    transition: 0.3s;
+}
+
+.service-card {
+    background-color: var(--navy-dark);
+    border: 1px solid rgba(212, 175, 55, 0.15); /* Borda dourada bem sutil */
+    border-radius: 6px;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--gold);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+/* Efeito sutil no card do meio */
+.border-gold-light {
+    border-color: rgba(212, 175, 55, 0.4);
+}
+
+
+#quem-somos .img-fluid {
+    height: 500px; /* Ajuste conforme necessário */
+    width: auto;
+    border-radius: 6px;
+}
