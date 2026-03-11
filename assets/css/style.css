@@ -116,3 +116,18 @@ body {
     width: auto;
     border-radius: 6px;
 }
+
+
+@media (max-width: 768px) {
+    .hero-content .btn {
+        width: 100%;       /* Faz o botão ocupar a largura total disponível */
+        max-width: 300px;  /* Define um limite para não ficarem largos demais */
+        margin: 0 auto;    /* Centraliza os botões */
+        display: block;    /* Garante que fiquem um abaixo do outro */
+    }
+    
+    .hero-content .d-flex {
+        flex-direction: column; /* Empilha os botões no mobile */
+        align-items: center;
+    }
+}
